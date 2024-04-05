@@ -48,6 +48,9 @@
                 alert("Buku tidak ditemukan!");
                 return;
             }
+            if (parseInt(jumlahInput)>selectedBook.jumlah){
+                alert("Jumlah buku tidak tersedia.!");
+            } 
         }
     </script>
 </body>
