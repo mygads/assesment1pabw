@@ -32,6 +32,11 @@
             const jumlahInput = document.getElementById("jumlah").value;
             const bukuSelected = document.getElementById("buku").value;
 
+            if (jumlahInput === ""){
+                    alert("Jumlah tidak boleh kosong!");
+                    return;
+                }
+
             let buku = [
                 {"nama": "sherlock", "jumlah":2},
                 {"nama": "lupin", "jumlah":2},
