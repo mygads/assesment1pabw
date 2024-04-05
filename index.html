@@ -42,6 +42,12 @@
                 {"nama": "lupin", "jumlah":2},
                 {"nama": "aladin", "jumlah":2},
             ];
+
+            const selectedBook = buku.find(book => book.nama === bukuSelected);
+            if (!selectedBook) {
+                alert("Buku tidak ditemukan!");
+                return;
+            }
         }
     </script>
 </body>
